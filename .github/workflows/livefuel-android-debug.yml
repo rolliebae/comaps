@@ -4,9 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - 'android/**'
-      - '.github/workflows/livefuel-android-debug.yml'
+  pull_request:
 
 permissions:
   contents: read
