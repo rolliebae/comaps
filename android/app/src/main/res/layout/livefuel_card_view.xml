@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/margin_base"
+    android:paddingVertical="@dimen/margin_half">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+      <com.google.android.material.textview.MaterialTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/livefuel_title"
+        android:textStyle="bold" />
+
+      <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/livefuel_progress"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:indeterminate="true" />
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/livefuel_status"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_half"
+      android:text="@string/livefuel_loading" />
+
+    <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/livefuel_meta"
+      style="@style/MwmTextAppearance.Caption"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_quarter" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_half"
+      android:orientation="horizontal">
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/livefuel_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/livefuel_confirm" />
+
+      <Space
+        android:layout_width="@dimen/margin_half"
+        android:layout_height="1dp" />
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/livefuel_report"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/livefuel_report" />
+    </LinearLayout>
+  </LinearLayout>
+</merge>

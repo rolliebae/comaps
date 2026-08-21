@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="livefuel_title">Топливо сейчас</string>
+  <string name="livefuel_loading">Загружаем свежий статус АЗС…</string>
+  <string name="livefuel_no_live_data">Для этой АЗС пока нет live-данных</string>
+  <string name="livefuel_no_reports">Свежих отметок пока нет</string>
+  <string name="livefuel_waiting_for_reports">Ждём свежие подтверждения</string>
+  <string name="livefuel_updated_minutes">Обновлено %1$d мин назад</string>
+  <string name="livefuel_confirm">Подтвердить</string>
+  <string name="livefuel_report">Сообщить изменение</string>
+  <string name="livefuel_choose_fuel">Выберите топливо</string>
+  <string name="livefuel_submit_failed">Не удалось отправить отметку: %1$s</string>
+  <string name="livefuel_status_available">Есть</string>
+  <string name="livefuel_status_queue">Очередь</string>
+  <string name="livefuel_status_low">Мало</string>
+  <string name="livefuel_status_unavailable">Нет</string>
+  <string name="livefuel_status_limited">Лимит</string>
+  <string name="livefuel_status_unknown">Нет данных</string>
+</resources>
