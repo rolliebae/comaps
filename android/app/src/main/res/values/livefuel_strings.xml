@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="livefuel_api_base_url" translatable="false">http://10.0.2.2:8000</string>
+  <string name="livefuel_title">Fuel right now</string>
+  <string name="livefuel_loading">Loading fresh station status…</string>
+  <string name="livefuel_no_live_data">No live data for this station</string>
+  <string name="livefuel_no_reports">No recent reports yet</string>
+  <string name="livefuel_waiting_for_reports">Waiting for fresh confirmations</string>
+  <string name="livefuel_updated_minutes">Updated %1$d min ago</string>
+  <string name="livefuel_confirm">Confirm</string>
+  <string name="livefuel_report">Report change</string>
+  <string name="livefuel_choose_fuel">Choose fuel</string>
+  <string name="livefuel_submit_failed">Could not send report: %1$s</string>
+  <string name="livefuel_status_available">Available</string>
+  <string name="livefuel_status_queue">Queue</string>
+  <string name="livefuel_status_low">Low</string>
+  <string name="livefuel_status_unavailable">Unavailable</string>
+  <string name="livefuel_status_limited">Limited</string>
+  <string name="livefuel_status_unknown">Unknown</string>
+</resources>
