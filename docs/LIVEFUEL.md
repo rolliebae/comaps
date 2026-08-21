@@ -32,3 +32,7 @@ POST /api/v1/reports
 ```
 
 The next client milestone is Smart Pick: rank credible nearby stations server-side, then re-rank the best candidates with actual CoMaps route distance/ETA.
+
+## CI validation
+
+The fork contains a GitHub Actions workflow that performs a shallow parallel recursive submodule checkout and builds an arm64 `FdroidDebug` APK on pushes to `main` and on pull requests.
