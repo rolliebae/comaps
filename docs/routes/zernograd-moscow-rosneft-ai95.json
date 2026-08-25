@@ -8,26 +8,38 @@
   "external_live_source": {
     "name": "GdeBenz",
     "mode": "browser_only",
+    "station_identity": "matched_by_comaps_coordinates",
+    "permanent_station_permalink_assumed": false,
     "homepage": "https://gdebenz.ru/",
     "brand_url": "https://gdebenz.ru/brand/rosneft",
     "fuel_url": "https://gdebenz.ru/fuel/ai-95",
+    "reserve_brand_url": "https://www.gdebenz.org/brand/rosneft",
     "automated_access": false
   },
   "fuel_stops": [
     {
       "name": "Rosneft M-4 711 km",
       "lat": 50.174728,
-      "lon": 40.407089
+      "lon": 40.407089,
+      "fuel": "AI-95",
+      "gdebenz_primary_url": "https://gdebenz.ru/trassa/m4-don",
+      "gdebenz_fallback_url": "https://www.gdebenz.org/brand/rosneft"
     },
     {
       "name": "Rosneft M-4 424 km",
       "lat": 52.376106,
-      "lon": 38.894249
+      "lon": 38.894249,
+      "fuel": "AI-95",
+      "gdebenz_primary_url": "https://gdebenz.ru/trassa/m4-don",
+      "gdebenz_fallback_url": "https://www.gdebenz.org/brand/rosneft"
     },
     {
       "name": "Rosneft M-4 108 km",
       "lat": 54.850270,
-      "lon": 38.039720
+      "lon": 38.039720,
+      "fuel": "AI-95",
+      "gdebenz_primary_url": "https://gdebenz.ru/gde-zapravitsya/stupino",
+      "gdebenz_fallback_url": "https://www.gdebenz.org/brand/rosneft"
     }
   ]
 }

@@ -16,7 +16,8 @@
   <string name="livefuel_status_unavailable">Нет</string>
   <string name="livefuel_status_limited">Лимит</string>
   <string name="livefuel_status_unknown">Нет данных</string>
-  <string name="livefuel_gdebenz_check">Проверить Роснефть АИ-95 на ГдеБЕНЗ</string>
+  <string name="livefuel_gdebenz_check">Проверить эту Роснефть · АИ-95 на ГдеБЕНЗ</string>
   <string name="livefuel_gdebenz_route_stop">Точка маршрута: Роснефть, АИ-95</string>
-  <string name="livefuel_gdebenz_disclaimer">Откроется ГдеБЕНЗ в браузере. Отметки оставляют водители; наличие уточняйте на АЗС.</string>
+  <string name="livefuel_gdebenz_disclaimer">Откроется официальный экран маршрута/района ГдеБЕНЗ. Выберите эту АЗС и фильтр АИ-95; отметки водителей могут меняться.</string>
+  <string name="livefuel_gdebenz_open_failed">Не удалось открыть ГдеБЕНЗ или резервную карту.</string>
 </resources>
