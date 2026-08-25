@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1"
+     creator="CoMaps route plan"
+     xmlns="http://www.topografix.com/GPX/1/1"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/1 https://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Зерноград → Москва — Роснефть АИ-95</name>
+    <desc>Маршрут через М-4 «Дон». Промежуточные остановки: только АЗС Роснефть с АИ-95. Плановый выезд: 07:00.</desc>
+  </metadata>
+
+  <wpt lat="46.846525" lon="40.304033">
+    <name>Старт — Зерноград</name>
+    <desc>Зерноград, Ростовская область</desc>
+  </wpt>
+  <wpt lat="50.174728" lon="40.407089">
+    <name>Роснефть — М-4, 711 км</name>
+    <desc>Верхний Мамон. АЗС Роснефть. Требуемое топливо: АИ-95.</desc>
+  </wpt>
+  <wpt lat="52.376106" lon="38.894249">
+    <name>Роснефть — М-4, 424 км</name>
+    <desc>Большое Панарино / Задонский район. АЗС Роснефть. Требуемое топливо: АИ-95.</desc>
+  </wpt>
+  <wpt lat="54.850270" lon="38.039720">
+    <name>Роснефть — М-4, 108 км</name>
+    <desc>Соколова Пустынь / Ступино. АЗС Роснефть. Требуемое топливо: АИ-95.</desc>
+  </wpt>
+  <wpt lat="55.83214267736634" lon="37.55670929207553">
+    <name>Финиш — Лиственничная аллея, 2Б</name>
+    <desc>Москва, Лиственничная аллея, дом 2Б</desc>
+  </wpt>
+
+  <rte>
+    <name>Зерноград → Москва — Роснефть АИ-95</name>
+    <desc>Порядок промежуточных точек для автомобильной навигации CoMaps.</desc>
+    <rtept lat="46.846525" lon="40.304033">
+      <name>Зерноград</name>
+    </rtept>
+    <rtept lat="50.174728" lon="40.407089">
+      <name>Роснефть М-4 711 км</name>
+    </rtept>
+    <rtept lat="52.376106" lon="38.894249">
+      <name>Роснефть М-4 424 км</name>
+    </rtept>
+    <rtept lat="54.850270" lon="38.039720">
+      <name>Роснефть М-4 108 км</name>
+    </rtept>
+    <rtept lat="55.83214267736634" lon="37.55670929207553">
+      <name>Москва, Лиственничная аллея 2Б</name>
+    </rtept>
+  </rte>
+</gpx>
