@@ -37,6 +37,7 @@ public class LiveFuelCardView extends LinearLayout
   private MaterialTextView mMeta;
   private MaterialButton mConfirm;
   private MaterialButton mReport;
+  private MaterialButton mGdeBenz;
 
   @Nullable private PlacePageViewModel mViewModel;
   @Nullable private Observer<MapObject> mObserver;
@@ -65,9 +66,11 @@ public class LiveFuelCardView extends LinearLayout
     mMeta = findViewById(R.id.livefuel_meta);
     mConfirm = findViewById(R.id.livefuel_confirm);
     mReport = findViewById(R.id.livefuel_report);
+    mGdeBenz = findViewById(R.id.livefuel_gdebenz);
 
     mConfirm.setOnClickListener(v -> confirmCurrentState());
     mReport.setOnClickListener(v -> chooseFuelForReport());
+    mGdeBenz.setOnClickListener(v -> GdeBenzRouteIntegration.openRosneft(getContext()));
   }
 
   @Override
@@ -98,13 +101,30 @@ public class LiveFuelCardView extends LinearLayout
     mMapObject = mapObject;
     mState = null;
 
-    if (mapObject == null || !LiveFuelMapObjectUtils.isFuelStation(mapObject))
+    boolean isFuelStation = mapObject != null && LiveFuelMapObjectUtils.isFuelStation(mapObject);
+    boolean isGdeBenzStop = mapObject != null && GdeBenzRouteIntegration.isSupportedRouteStop(mapObject);
+    if (mapObject == null || (!isFuelStation && !isGdeBenzStop))
     {
       setVisibility(GONE);
       return;
     }
 
     setVisibility(VISIBLE);
+    mGdeBenz.setVisibility(isGdeBenzStop ? VISIBLE : GONE);
+    mGdeBenz.setEnabled(true);
+
+    // Imported route waypoints are bookmarks, not OSM fuel POIs. Keep the
+    // GdeBenz route check available even when LiveFuel has no POI to query.
+    if (!isFuelStation)
+    {
+      setLoading(false);
+      mStatus.setText(R.string.livefuel_gdebenz_route_stop);
+      mMeta.setText(R.string.livefuel_gdebenz_disclaimer);
+      mConfirm.setEnabled(false);
+      mReport.setEnabled(false);
+      return;
+    }
+
     setLoading(true);
     mStatus.setText(R.string.livefuel_loading);
     mMeta.setText("");
@@ -127,7 +147,10 @@ public class LiveFuelCardView extends LinearLayout
           return;
         setLoading(false);
         mStatus.setText(R.string.livefuel_no_live_data);
-        mMeta.setText(error.getMessage());
+        if (isGdeBenzStop)
+          mMeta.setText(R.string.livefuel_gdebenz_disclaimer);
+        else
+          mMeta.setText(error.getMessage());
         mConfirm.setEnabled(false);
         mReport.setEnabled(false);
       }
@@ -288,6 +311,9 @@ public class LiveFuelCardView extends LinearLayout
     mProgress.setVisibility(loading ? VISIBLE : GONE);
     mConfirm.setEnabled(!loading);
     mReport.setEnabled(!loading);
+    // External GdeBenz lookup does not depend on the LiveFuel backend.
+    if (mGdeBenz.getVisibility() == VISIBLE)
+      mGdeBenz.setEnabled(true);
   }
 
   @NonNull

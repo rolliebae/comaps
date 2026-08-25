@@ -17,4 +17,7 @@
   <string name="livefuel_status_unavailable">Unavailable</string>
   <string name="livefuel_status_limited">Limited</string>
   <string name="livefuel_status_unknown">Unknown</string>
+  <string name="livefuel_gdebenz_check">Check Rosneft AI-95 on GdeBenz</string>
+  <string name="livefuel_gdebenz_route_stop">Route fuel stop: Rosneft, AI-95</string>
+  <string name="livefuel_gdebenz_disclaimer">Opens GdeBenz in your browser. Driver reports are crowdsourced; verify at the station.</string>
 </resources>
