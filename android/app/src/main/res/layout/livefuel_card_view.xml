@@ -66,5 +66,13 @@
         android:layout_weight="1"
         android:text="@string/livefuel_report" />
     </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/livefuel_gdebenz"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/margin_half"
+      android:text="@string/livefuel_gdebenz_check"
+      android:visibility="gone" />
   </LinearLayout>
 </merge>

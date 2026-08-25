@@ -1,0 +1,33 @@
+{
+  "route_id": "zernograd-moscow-rosneft-ai95",
+  "departure_local": "07:00",
+  "fuel_policy": {
+    "brand": "Rosneft",
+    "fuel": "AI-95"
+  },
+  "external_live_source": {
+    "name": "GdeBenz",
+    "mode": "browser_only",
+    "homepage": "https://gdebenz.ru/",
+    "brand_url": "https://gdebenz.ru/brand/rosneft",
+    "fuel_url": "https://gdebenz.ru/fuel/ai-95",
+    "automated_access": false
+  },
+  "fuel_stops": [
+    {
+      "name": "Rosneft M-4 711 km",
+      "lat": 50.174728,
+      "lon": 40.407089
+    },
+    {
+      "name": "Rosneft M-4 424 km",
+      "lat": 52.376106,
+      "lon": 38.894249
+    },
+    {
+      "name": "Rosneft M-4 108 km",
+      "lat": 54.850270,
+      "lon": 38.039720
+    }
+  ]
+}

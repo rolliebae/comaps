@@ -6,7 +6,13 @@
      xsi:schemaLocation="http://www.topografix.com/GPX/1/1 https://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
     <name>Зерноград → Москва — Роснефть АИ-95</name>
-    <desc>Маршрут через М-4 «Дон». Промежуточные остановки: только АЗС Роснефть с АИ-95. Плановый выезд: 07:00.</desc>
+    <desc>Маршрут через М-4 «Дон». Промежуточные остановки: только АЗС Роснефть с АИ-95. Плановый выезд: 07:00. Проверка live-ситуации — через ГдеБЕНЗ в браузере.</desc>
+    <link href="https://gdebenz.ru/brand/rosneft">
+      <text>ГдеБЕНЗ — Роснефть</text>
+    </link>
+    <link href="https://gdebenz.ru/fuel/ai-95">
+      <text>ГдеБЕНЗ — АИ-95</text>
+    </link>
   </metadata>
 
   <wpt lat="46.846525" lon="40.304033">
@@ -15,15 +21,21 @@
   </wpt>
   <wpt lat="50.174728" lon="40.407089">
     <name>Роснефть — М-4, 711 км</name>
-    <desc>Верхний Мамон. АЗС Роснефть. Требуемое топливо: АИ-95.</desc>
+    <desc>Верхний Мамон. АЗС Роснефть. Требуемое топливо: АИ-95. Перед заездом проверить свежую отметку на ГдеБЕНЗ.</desc>
+    <link href="https://gdebenz.ru/brand/rosneft"><text>ГдеБЕНЗ — Роснефть</text></link>
+    <link href="https://gdebenz.ru/fuel/ai-95"><text>ГдеБЕНЗ — АИ-95</text></link>
   </wpt>
   <wpt lat="52.376106" lon="38.894249">
     <name>Роснефть — М-4, 424 км</name>
-    <desc>Большое Панарино / Задонский район. АЗС Роснефть. Требуемое топливо: АИ-95.</desc>
+    <desc>Большое Панарино / Задонский район. АЗС Роснефть. Требуемое топливо: АИ-95. Перед заездом проверить свежую отметку на ГдеБЕНЗ.</desc>
+    <link href="https://gdebenz.ru/brand/rosneft"><text>ГдеБЕНЗ — Роснефть</text></link>
+    <link href="https://gdebenz.ru/fuel/ai-95"><text>ГдеБЕНЗ — АИ-95</text></link>
   </wpt>
   <wpt lat="54.850270" lon="38.039720">
     <name>Роснефть — М-4, 108 км</name>
-    <desc>Соколова Пустынь / Ступино. АЗС Роснефть. Требуемое топливо: АИ-95.</desc>
+    <desc>Соколова Пустынь / Ступино. АЗС Роснефть. Требуемое топливо: АИ-95. Перед заездом проверить свежую отметку на ГдеБЕНЗ.</desc>
+    <link href="https://gdebenz.ru/brand/rosneft"><text>ГдеБЕНЗ — Роснефть</text></link>
+    <link href="https://gdebenz.ru/fuel/ai-95"><text>ГдеБЕНЗ — АИ-95</text></link>
   </wpt>
   <wpt lat="55.83214267736634" lon="37.55670929207553">
     <name>Финиш — Лиственничная аллея, 2Б</name>
@@ -38,12 +50,15 @@
     </rtept>
     <rtept lat="50.174728" lon="40.407089">
       <name>Роснефть М-4 711 км</name>
+      <link href="https://gdebenz.ru/brand/rosneft"><text>Проверить на ГдеБЕНЗ</text></link>
     </rtept>
     <rtept lat="52.376106" lon="38.894249">
       <name>Роснефть М-4 424 км</name>
+      <link href="https://gdebenz.ru/brand/rosneft"><text>Проверить на ГдеБЕНЗ</text></link>
     </rtept>
     <rtept lat="54.850270" lon="38.039720">
       <name>Роснефть М-4 108 км</name>
+      <link href="https://gdebenz.ru/brand/rosneft"><text>Проверить на ГдеБЕНЗ</text></link>
     </rtept>
     <rtept lat="55.83214267736634" lon="37.55670929207553">
       <name>Москва, Лиственничная аллея 2Б</name>
