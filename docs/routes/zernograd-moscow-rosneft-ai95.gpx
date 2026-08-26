@@ -6,34 +6,41 @@
      xsi:schemaLocation="http://www.topografix.com/GPX/1/1 https://www.topografix.com/GPX/1/1/gpx.xsd">
   <metadata>
     <name>Зерноград → Москва — Роснефть АИ-95</name>
-    <desc>Маршрут через М-4 «Дон». Промежуточные остановки: только АЗС Роснефть с АИ-95. Плановый выезд: 07:00. Проверка live-ситуации — через публичный интерфейс ГдеБЕНЗ в браузере.</desc>
+    <desc>OSM/CoMaps отвечает за геометрию и навигацию; Роснефть — за идентичность АЗС, где она официально подтверждена; ГдеБЕНЗ — browser-only live-проверка.</desc>
+    <link href="https://rosneft-azs.ru/stations"><text>Роснефть — официальный поиск АЗС</text></link>
     <link href="https://gdebenz.ru/trassa/m4-don"><text>ГдеБЕНЗ — М-4 «Дон»</text></link>
-    <link href="https://gdebenz.ru/fuel/ai-95"><text>ГдеБЕНЗ — фильтр АИ-95</text></link>
-    <link href="https://www.gdebenz.org/brand/rosneft"><text>ГдеБЕНЗ — резервный адрес Роснефть</text></link>
+    <link href="https://gdebenz.ru/fuel/ai-95"><text>ГдеБЕНЗ — АИ-95</text></link>
   </metadata>
 
   <wpt lat="46.846525" lon="40.304033">
     <name>Старт — Зерноград</name>
     <desc>Зерноград, Ростовская область</desc>
   </wpt>
+
   <wpt lat="50.174728" lon="40.407089">
-    <name>Роснефть — М-4, 711 км</name>
-    <desc>Верхний Мамон. Точная АЗС определяется координатами CoMaps. На ГдеБЕНЗ откройте карту М-4, выберите эту Роснефть и фильтр АИ-95.</desc>
-    <link href="https://gdebenz.ru/trassa/m4-don"><text>ГдеБЕНЗ — М-4, Роснефть, АИ-95</text></link>
+    <name>Роснефть АЗС №50 — М-4, 711 км</name>
+    <desc>АИ-95. Координата привязана в CoMaps/OSM. Идентификатор №50 подтверждён внешним точным координатным каталогом; свежий официальный public ID Роснефти не подтверждён.</desc>
+    <link href="https://rosneft-azs.ru/stations"><text>Роснефть — поиск АЗС</text></link>
+    <link href="https://gdebenz.ru/trassa/m4-don"><text>ГдеБЕНЗ — live-проверка М-4</text></link>
     <link href="https://gdebenz.ru/fuel/ai-95"><text>ГдеБЕНЗ — АИ-95</text></link>
   </wpt>
+
   <wpt lat="52.376106" lon="38.894249">
-    <name>Роснефть — М-4, 424 км</name>
-    <desc>Большое Панарино / Задонский район. Точная АЗС определяется координатами CoMaps. На ГдеБЕНЗ откройте карту М-4, выберите эту Роснефть и фильтр АИ-95.</desc>
-    <link href="https://gdebenz.ru/trassa/m4-don"><text>ГдеБЕНЗ — М-4, Роснефть, АИ-95</text></link>
+    <name>Роснефть АЗК №281 — М-4, 424 км</name>
+    <desc>АИ-95. Официально подтверждённый идентификатор Роснефти: АЗК №281, Большое Панарино, 424 км, зд. 94а.</desc>
+    <link href="https://rosneft-azs.ru/stations"><text>Роснефть — официальный поиск АЗС</text></link>
+    <link href="https://gdebenz.ru/trassa/m4-don"><text>ГдеБЕНЗ — live-проверка М-4</text></link>
     <link href="https://gdebenz.ru/fuel/ai-95"><text>ГдеБЕНЗ — АИ-95</text></link>
   </wpt>
+
   <wpt lat="54.850270" lon="38.039720">
-    <name>Роснефть — М-4, 108 км</name>
-    <desc>Соколова Пустынь / Ступино. Точная АЗС определяется координатами CoMaps. На ГдеБЕНЗ откройте карту Ступино, выберите эту Роснефть и фильтр АИ-95.</desc>
-    <link href="https://gdebenz.ru/gde-zapravitsya/stupino"><text>ГдеБЕНЗ — Ступино, Роснефть, АИ-95</text></link>
+    <name>Роснефть MJ247 — М-4, 108 км</name>
+    <desc>АИ-95. Официально подтверждённый идентификатор Роснефти: MJ247, 108 км Москва—Ростов—Дон, левая сторона.</desc>
+    <link href="https://rosneft-azs.ru/stations"><text>Роснефть — официальный поиск АЗС</text></link>
+    <link href="https://gdebenz.ru/gde-zapravitsya/stupino"><text>ГдеБЕНЗ — live-проверка Ступино</text></link>
     <link href="https://gdebenz.ru/fuel/ai-95"><text>ГдеБЕНЗ — АИ-95</text></link>
   </wpt>
+
   <wpt lat="55.83214267736634" lon="37.55670929207553">
     <name>Финиш — Лиственничная аллея, 2Б</name>
     <desc>Москва, Лиственничная аллея, дом 2Б</desc>
@@ -41,19 +48,19 @@
 
   <rte>
     <name>Зерноград → Москва — Роснефть АИ-95</name>
-    <desc>Порядок промежуточных точек для автомобильной навигации CoMaps.</desc>
+    <desc>Точки маршрута с источниками OSM → Rosneft ID → GdeBenz live.</desc>
     <rtept lat="46.846525" lon="40.304033"><name>Зерноград</name></rtept>
     <rtept lat="50.174728" lon="40.407089">
-      <name>Роснефть М-4 711 км · АИ-95</name>
-      <link href="https://gdebenz.ru/trassa/m4-don"><text>Проверить на ГдеБЕНЗ</text></link>
+      <name>Роснефть АЗС №50 · М-4 711 км · АИ-95</name>
+      <link href="https://gdebenz.ru/trassa/m4-don"><text>Проверить live на ГдеБЕНЗ</text></link>
     </rtept>
     <rtept lat="52.376106" lon="38.894249">
-      <name>Роснефть М-4 424 км · АИ-95</name>
-      <link href="https://gdebenz.ru/trassa/m4-don"><text>Проверить на ГдеБЕНЗ</text></link>
+      <name>Роснефть АЗК №281 · М-4 424 км · АИ-95</name>
+      <link href="https://gdebenz.ru/trassa/m4-don"><text>Проверить live на ГдеБЕНЗ</text></link>
     </rtept>
     <rtept lat="54.850270" lon="38.039720">
-      <name>Роснефть М-4 108 км · АИ-95</name>
-      <link href="https://gdebenz.ru/gde-zapravitsya/stupino"><text>Проверить на ГдеБЕНЗ</text></link>
+      <name>Роснефть MJ247 · М-4 108 км · АИ-95</name>
+      <link href="https://gdebenz.ru/gde-zapravitsya/stupino"><text>Проверить live на ГдеБЕНЗ</text></link>
     </rtept>
     <rtept lat="55.83214267736634" lon="37.55670929207553"><name>Москва, Лиственничная аллея 2Б</name></rtept>
   </rte>

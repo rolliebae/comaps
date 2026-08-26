@@ -3,43 +3,117 @@
   "departure_local": "07:00",
   "fuel_policy": {
     "brand": "Rosneft",
-    "fuel": "AI-95"
+    "fuel": "AI-95",
+    "routing_geometry_authority": "OpenStreetMap via CoMaps",
+    "station_identity_authority": "Rosneft official public sources where verified",
+    "live_availability_source": "GdeBenz browser-only"
   },
-  "external_live_source": {
-    "name": "GdeBenz",
-    "mode": "browser_only",
-    "station_identity": "matched_by_comaps_coordinates",
-    "permanent_station_permalink_assumed": false,
-    "homepage": "https://gdebenz.ru/",
-    "brand_url": "https://gdebenz.ru/brand/rosneft",
-    "fuel_url": "https://gdebenz.ru/fuel/ai-95",
-    "reserve_brand_url": "https://www.gdebenz.org/brand/rosneft",
-    "automated_access": false
+  "source_policy": {
+    "osm": {
+      "role": "geometry_and_routing",
+      "binding": "coordinate_radius",
+      "match_radius_m": 750,
+      "expected_tags": {
+        "amenity": "fuel",
+        "brand": "Роснефть",
+        "fuel:octane_95": "yes"
+      },
+      "object_id_strategy": "not_frozen; OSM node/way ids may change"
+    },
+    "rosneft": {
+      "role": "station_identity_and_fuel_capability",
+      "catalog_url": "https://rosneft-azs.ru/stations",
+      "automated_access": false
+    },
+    "gdebenz": {
+      "role": "crowdsourced_live_status",
+      "mode": "browser_only",
+      "homepage": "https://gdebenz.ru/",
+      "brand_url": "https://gdebenz.ru/brand/rosneft",
+      "fuel_url": "https://gdebenz.ru/fuel/ai-95",
+      "reserve_brand_url": "https://www.gdebenz.org/brand/rosneft",
+      "automated_access": false,
+      "permanent_station_permalink_assumed": false
+    }
   },
   "fuel_stops": [
     {
-      "name": "Rosneft M-4 711 km",
+      "route_stop_id": "rosneft-50",
+      "name": "Rosneft station 50 / M-4 711 km",
       "lat": 50.174728,
       "lon": 40.407089,
       "fuel": "AI-95",
-      "gdebenz_primary_url": "https://gdebenz.ru/trassa/m4-don",
-      "gdebenz_fallback_url": "https://www.gdebenz.org/brand/rosneft"
+      "osm": {
+        "match_method": "coordinate_radius_and_fuel_station_semantics",
+        "osm_object_id": null,
+        "osm_object_id_verified": false
+      },
+      "rosneft": {
+        "station_id": "50",
+        "station_id_label": "АЗС №50",
+        "official_identity_verified": false,
+        "verification": "corroborated_exact_coordinate",
+        "address": "Воронежская область, Верхний Мамон, ул. Дорожная, 30 / М-4, 711 км",
+        "identity_source_url": "https://lk.ariscard.com/download/rus_2.pdf",
+        "official_catalog_url": "https://rosneft-azs.ru/stations"
+      },
+      "gdebenz": {
+        "primary_url": "https://gdebenz.ru/trassa/m4-don",
+        "ai95_url": "https://gdebenz.ru/fuel/ai-95",
+        "fallback_url": "https://www.gdebenz.org/brand/rosneft"
+      }
     },
     {
-      "name": "Rosneft M-4 424 km",
+      "route_stop_id": "rosneft-281",
+      "name": "Rosneft AZK 281 / M-4 424 km",
       "lat": 52.376106,
       "lon": 38.894249,
       "fuel": "AI-95",
-      "gdebenz_primary_url": "https://gdebenz.ru/trassa/m4-don",
-      "gdebenz_fallback_url": "https://www.gdebenz.org/brand/rosneft"
+      "osm": {
+        "match_method": "coordinate_radius_and_fuel_station_semantics",
+        "osm_object_id": null,
+        "osm_object_id_verified": false
+      },
+      "rosneft": {
+        "station_id": "281",
+        "station_id_label": "АЗК №281",
+        "official_identity_verified": true,
+        "verification": "official",
+        "address": "Липецкая область, Большое Панарино, М-4, 424 км, зд. 94а",
+        "identity_source_url": "https://rosneft-azs.ru/upload/site1/document_news/2025/Spisok_obnovlennykh_AZK2.pdf",
+        "official_catalog_url": "https://rosneft-azs.ru/stations"
+      },
+      "gdebenz": {
+        "primary_url": "https://gdebenz.ru/trassa/m4-don",
+        "ai95_url": "https://gdebenz.ru/fuel/ai-95",
+        "fallback_url": "https://www.gdebenz.org/brand/rosneft"
+      }
     },
     {
-      "name": "Rosneft M-4 108 km",
-      "lat": 54.850270,
-      "lon": 38.039720,
+      "route_stop_id": "rosneft-mj247",
+      "name": "Rosneft MJ247 / M-4 108 km",
+      "lat": 54.85027,
+      "lon": 38.03972,
       "fuel": "AI-95",
-      "gdebenz_primary_url": "https://gdebenz.ru/gde-zapravitsya/stupino",
-      "gdebenz_fallback_url": "https://www.gdebenz.org/brand/rosneft"
+      "osm": {
+        "match_method": "coordinate_radius_and_fuel_station_semantics",
+        "osm_object_id": null,
+        "osm_object_id_verified": false
+      },
+      "rosneft": {
+        "station_id": "MJ247",
+        "station_id_label": "MJ247",
+        "official_identity_verified": true,
+        "verification": "official",
+        "address": "Московская область, Ступинский район, а/д Москва-Ростов-Дон, 108 км, левая сторона",
+        "identity_source_url": "https://rosneft-azs.ru/news/169599",
+        "official_catalog_url": "https://rosneft-azs.ru/stations"
+      },
+      "gdebenz": {
+        "primary_url": "https://gdebenz.ru/gde-zapravitsya/stupino",
+        "ai95_url": "https://gdebenz.ru/fuel/ai-95",
+        "fallback_url": "https://www.gdebenz.org/brand/rosneft"
+      }
     }
   ]
 }
