@@ -19,6 +19,6 @@
   <string name="livefuel_status_unknown">Unknown</string>
   <string name="livefuel_gdebenz_check">Check this Rosneft · AI-95 on GdeBenz</string>
   <string name="livefuel_gdebenz_route_stop">Route fuel stop: Rosneft, AI-95</string>
-  <string name="livefuel_gdebenz_disclaimer">Opens the official GdeBenz route/local page. Select this station and the AI-95 filter; crowdsourced reports can change.</string>
-  <string name="livefuel_gdebenz_open_failed">Could not open GdeBenz or a maps fallback.</string>
+  <string name="livefuel_gdebenz_disclaimer">GdeBenz is used only for crowdsourced live status. CoMaps keeps station geometry from OSM and can fall back to Rosneft's public station catalog.</string>
+  <string name="livefuel_gdebenz_open_failed">Could not open GdeBenz, the Rosneft catalog, or a maps fallback.</string>
 </resources>
